@@ -54,5 +54,5 @@ sudo docker run -itd -P myimage:$BUILD_NUMBER'''
       }
 }
 	 }
-    }
-}  
+  
+
