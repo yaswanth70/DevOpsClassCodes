@@ -56,7 +56,7 @@ pipeline{
                   sh 'mvn package'
               }
           }
-	       /*stage('Deploy'){
+	       stage('Deploy'){
       agent any
       steps{
         sh label: '', script: '''rm -rf mydockerfile
@@ -73,7 +73,7 @@ EOT
 sudo docker build -t myimage:$BUILD_NUMBER .
 sudo docker run -itd -P myimage:$BUILD_NUMBER'''
       }
-    }*/
+    }
 
           
       }
